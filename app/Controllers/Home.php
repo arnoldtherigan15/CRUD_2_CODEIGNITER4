@@ -6,7 +6,10 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		return view('pages/home');
+		$data = [
+			'title' => 'Pet Station'
+		];
+		return view('pages/home', $data);
 	}
 
 	//--------------------------------------------------------------------

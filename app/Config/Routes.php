@@ -33,6 +33,13 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/pets', 'Pet::index');
+$routes->get('/pets/new-pet', 'Pet::create');
+$routes->post('/pets/save', 'Pet::save');
+$routes->get('/pets/edit/(:segment)', 'Pet::edit/$1');
+$routes->post('/pets/update/(:segment)', 'Pet::update/$1');
+$routes->delete('/pets/(:num)', 'Pet::delete/$1');
+$routes->get('/pets/(:segment)', 'Pet::detail/$1');
+$routes->get('/users', 'User::index');
 
 /**
  * --------------------------------------------------------------------

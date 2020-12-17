@@ -11,9 +11,15 @@
                 <a class="nav-link" href="/pets">Pets</a>
             </li>
             <li class="nav-item mx-2">
-                <a class="nav-link" href="/User">Users</a>
+                <a class="nav-link" href="/users">Users</a>
             </li>
         </ul>
         <!-- </div> -->
     </div>
 </nav>
+
+<?php if (session()->getFlashdata('message')) : ?>
+    <div class="alert alert-success" role="alert">
+        <?= session()->getFlashdata('message'); ?>
+    </div>
+<?php endif ?>

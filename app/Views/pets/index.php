@@ -1,7 +1,7 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
 <div class="container mt-5">
-    <a href="/pets/create" class="btn btn-primary mb-4">Add New Comic</a>
+    <a href="/pets/new-pet" class="btn btn-primary mb-4">Add New Comic</a>
     <table class="table table-striped shadow">
         <thead>
             <tr>

@@ -14,4 +14,9 @@ class PetModel extends Model
     {
         return $this->findAll();
     }
+
+    public function getDetail($id)
+    {
+        return $this->where('id', $id)->first();
+    }
 }
